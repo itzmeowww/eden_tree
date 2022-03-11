@@ -2,83 +2,140 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 
+import React, { useState, useEffect } from 'react';
+import { AiOutlineClose, AiFillRead, AiOutlineLink } from "react-icons/ai"
+import ReactFlow, {
+
+  MiniMap,
+  Controls,
+  Background,
+} from 'react-flow-renderer';
+
+
+import initialElements from './initial-elements';
+
+type ConceptDetail = {
+  id: string;
+  learned: boolean
+}
+
 const Home: NextPage = () => {
+  const [elements, setElements] = useState(initialElements);
+
+  const [conceptDetail, setConceptDetail] = useState<ConceptDetail[]>([
+    { id: "1", learned: false },
+    { id: "2", learned: false },
+    { id: "3", learned: false },
+    { id: "4", learned: false },
+    { id: "5", learned: false },
+    { id: "6", learned: false },
+    { id: "7", learned: false },
+  ])
+  const [currentConcept, setCurrentConcept] = useState(<></>)
+
+  const [showCard, setShowCard] = useState(false)
+
+  const onLoad = (reactFlowInstance) => {
+    reactFlowInstance.fitView();
+  };
+
+  const onElementClick = (event, element) => {
+
+
+    setCurrentConcept(element.data.label)
+    setShowCard(true)
+  }
+
+  const hideCard = () => {
+    setShowCard(false)
+  }
+
+  useEffect(() => {
+    setElements((els) =>
+      els.map((el) => {
+        const res = conceptDetail.filter((concept) => {
+          return concept.id === el.id
+        })
+        if (res.length != 0) {
+          el.style = {
+            ...el.style,
+            background: (res[0].learned ? '#22c55e' : ''),
+          }
+        }
+
+
+        return el;
+      })
+    );
+  }, [conceptDetail, setElements]);
+
+
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="w-full flex min-h-screen flex-col items-start justify-start">
       <Head>
-        <title>Create Next App</title>
+        <title>EdTree</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+      <div className={`w-full h-full fixed z-10 flex-col justify-center items-center ${showCard ? 'flex' : 'hidden'}`} >
+        <div className='absolute bg-black opacity-5 w-full h-full' onClick={hideCard}>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
         </div>
-      </main>
+        <div className='relative bg-white border rounded-md border-black w-3/4 h-3/4 max-w-sm max-h-96 opacity-95 flex flex-col justify-start items-center gap-2 py-4 px-10'>
+          <div className='absolute -right-3 -top-3 bg-white border rounded-full p-1 border-black' onClick={hideCard}> <AiOutlineClose /></div>
+          <h1 className='text-2xl font-bold border-b border-black pb-1 px-8'>{currentConcept}</h1>
+          <div className='text-lg'>
+            <input id='learned' type="checkbox" className='mr-2'>
+            </input>
+            <label htmlFor="learned"> Learned</label>
+          </div>
+          <div className='my-4'>
+            <a href=""><button className='border rounded-sm border-black px-4 py-1'>Watch Lesson</button></a>
+          </div>
+          <div className='w-full mt-6 flex items-center'>
+            <AiFillRead className='mr-2' />
+            <h2 className='text-lg font-semibold'>
+              Material
+            </h2>
+          </div>
+          <ul>
+            <a href="" className='text-blue-500 underline' ><li className='flex items-center'><AiOutlineLink className='mr-2' /> What is {currentConcept}</li></a>
+            <a href="" className='text-blue-500 underline' ><li className='flex items-center'><AiOutlineLink className='mr-2' /> Further reading about {currentConcept}</li></a>
+            <a href="" className='text-blue-500 underline' ><li className='flex items-center'><AiOutlineLink className='mr-2' />Practice problems for {currentConcept}</li></a>
+          </ul>
+        </div>
+      </div>
+      <div className='w-full h-screen mt-0'>
+        <ReactFlow
+          elements={elements}
+          onLoad={onLoad}
+          onElementClick={onElementClick}
+          snapToGrid={true}
+          nodesDraggable={false}
+          nodesConnectable={false}
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          snapGrid={[15, 15]}
         >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
+          <MiniMap
+            nodeStrokeColor={(n) => {
+              if (n.style?.background) return n.style.background;
+              if (n.type === 'input') return '#0041d0';
+              if (n.type === 'output') return '#ff0072';
+              if (n.type === 'default') return '#1a192b';
+              return '#eee';
+            }}
+            nodeColor={(n) => {
+              if (n.style?.background) return n.style.background;
+
+              return '#fff';
+            }}
+            nodeBorderRadius={2}
+          />
+          <Controls />
+          <Background color="#aaa" gap={16} />
+        </ReactFlow>
+      </div>
+
     </div>
   )
 }
