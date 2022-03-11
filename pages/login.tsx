@@ -1,10 +1,12 @@
 import React from 'react';
 import { GoogleLoginButton} from 'ts-react-google-login-component';
+import GoogleLogin from 'react-google-login';
+import MicrosoftLoginButton from './MicrosoftLoginButton';
 
 class Login extends React.Component {
 
     preLoginTracking(): void {
-        console.log('Attemp to login with google');
+        console.log('google');
     }
 
     errorHandler(error: string): void{
@@ -20,6 +22,10 @@ class Login extends React.Component {
 
     }
 
+    authHandler(err, data){
+        console.log(err, data);
+      };
+
     render(): JSX.Element {
         const clientConfig = { client_id: 'youappid' }
         const signInOptions = { scope: 'profile' }
@@ -28,7 +34,7 @@ class Login extends React.Component {
             <div className="w-full min-h-screen bg-gray-50 flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
                 <div className="w-full sm:max-w-md p-5 mx-auto">
                     <h2 className="mb-12 text-center text-5xl font-extrabold">Login</h2>
-                    <div className="divide-y-4 divide-slate-700 divide-dashed outline p-4 outline-offset-4">
+                    <div className="p-8 rounded-xl border-2 border-slate-900 divide-y-2 divide-slate-700 divide-solid">
                         <div>
                             <div className="mb-4">
                                 <label className="block mb-1">Email-Address</label>
@@ -48,13 +54,11 @@ class Login extends React.Component {
                         </div>
                         <div>
                             <div className="mt-6 flex items-center justify-center">
-                                <GoogleLoginButton
-                                    responseHandler={this.responseGoogle}
-                                    clientConfig={clientConfig}
-                                    preLogin={this.preLoginTracking}
-                                    failureHandler={this.errorHandler}
-                                    singInOptions={signInOptions}
+                                <GoogleLogin className='px-2 border rounded-xl text-base w-auto justify-center items-center border-'  clientId='#your_id'
                                 />
+                            </div>
+                            <div className="mt-6 flex items-center justify-center">
+                                <MicrosoftLoginButton buttonTheme='light'/>
                             </div>
                         </div>
                     </div>
