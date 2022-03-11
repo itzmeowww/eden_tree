@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player'
 
 import { useState } from "react"
 // Render a YouTube video player
-
+import DottedBackground from "../../components/DottedBackground"
 const Lesson = ({ id }) => {
     const correctChoice = 'A'
     const [showQuiz, setShowQuiz] = useState(false)
@@ -40,6 +40,7 @@ const Lesson = ({ id }) => {
     }
     return <div className="w-full flex min-h-screen flex-col items-center justify-start" >
         <Nav />
+        <DottedBackground />
 
 
         <div className=" w-3/4 max-w-lg min-h-min mt-32">
