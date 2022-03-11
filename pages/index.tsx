@@ -9,10 +9,11 @@ import ReactFlow, {
   MiniMap,
   Controls,
   Background,
+  Node
 } from 'react-flow-renderer';
 
 
-import initialElements from './initial-elements';
+import initialElements from '../data/initial-elements';
 import Nav from '../Components/Nav';
 
 type ConceptDetail = {
@@ -91,6 +92,21 @@ const Home: NextPage = () => {
   }, [conceptDetail, setElements]);
 
 
+  const nodeStrokeColor = (n: Node): string => {
+    if (n.style?.background) return n.style.background as string;
+    if (n.type === 'input') return '#0041d0';
+    if (n.type === 'output') return '#ff0072';
+    if (n.type === 'default') return '#1a192b';
+
+    return '#eee';
+  };
+
+  const nodeColor = (n: Node): string => {
+    if (n.style?.background) return n.style.background as string;
+
+    return '#fff';
+  };
+
   return (
     <div className="w-full flex h-screen flex-col items-start justify-start">
       <Head>
@@ -139,18 +155,8 @@ const Home: NextPage = () => {
           snapGrid={[15, 15]}
         >
           <MiniMap
-            nodeStrokeColor={(n) => {
-              if (n.style?.background) return n.style.background;
-              if (n.type === 'input') return '#0041d0';
-              if (n.type === 'output') return '#ff0072';
-              if (n.type === 'default') return '#1a192b';
-              return '#eee';
-            }}
-            nodeColor={(n) => {
-              if (n.style?.background) return n.style.background;
-
-              return '#fff';
-            }}
+            nodeStrokeColor={nodeStrokeColor}
+            nodeColor={nodeColor}
             nodeBorderRadius={2}
           />
           <Controls />

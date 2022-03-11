@@ -1,88 +1,82 @@
 import React from 'react'
+import { Elements, ArrowHeadType } from 'react-flow-renderer'
 
-export default [
+const initialElements: Elements = [
   {
     id: '1',
-    data: {
-      label: <>Concept A</>,
-    },
+    data: { label: 'Concept A' },
     type: 'input',
     position: { x: 250, y: 0 },
   },
   {
     id: '2',
-    data: {
-      label: <>Concept B</>,
-    },
+    data: { label: 'Concept B' },
     type: 'output',
     position: { x: 100, y: 100 },
   },
   {
     id: '3',
-    data: {
-      label: <>Concept C</>,
-    },
+    data: { label: 'Concept C' },
     position: { x: 400, y: 100 },
   },
   {
     id: '4',
     position: { x: 250, y: 200 },
-    data: {
-      label: <>Concept D</>,
-    },
+    data: { label: 'Concept D' },
   },
   {
     id: '5',
-    data: {
-      label: <>Concept E</>,
-    },
+    data: { label: 'Concept E' },
     position: { x: 250, y: 325 },
   },
   {
     id: '6',
     type: 'output',
-    data: {
-      label: <>Concept F</>,
-    },
+    data: { label: 'Concept F' },
     position: { x: 100, y: 480 },
   },
   {
     id: '7',
     type: 'output',
-    data: {
-      label: <>Concept G</>,
-    },
+    data: { label: 'Concept G' },
     position: { x: 400, y: 450 },
   },
   {
     id: 'e1-2',
     source: '1',
     target: '2',
-    arrowHeadType: 'arrowclosed',
+    arrowHeadType: ArrowHeadType.ArrowClosed,
   },
-  { id: 'e1-3', source: '1', target: '3', arrowHeadType: 'arrowclosed' },
+  {
+    id: 'e1-3',
+    source: '1',
+    target: '3',
+    arrowHeadType: ArrowHeadType.ArrowClosed,
+  },
   {
     id: 'e3-4',
     source: '3',
     target: '4',
-    arrowHeadType: 'arrowclosed',
+    arrowHeadType: ArrowHeadType.ArrowClosed,
   },
   {
     id: 'e4-5',
     source: '4',
     target: '5',
-    arrowHeadType: 'arrowclosed',
+    arrowHeadType: ArrowHeadType.ArrowClosed,
   },
   {
     id: 'e5-6',
     source: '5',
     target: '6',
-    arrowHeadType: 'arrowclosed',
+    arrowHeadType: ArrowHeadType.ArrowClosed,
   },
   {
     id: 'e5-7',
     source: '5',
     target: '7',
-    arrowHeadType: 'arrowclosed',
+    arrowHeadType: ArrowHeadType.ArrowClosed,
   },
 ]
+
+export default initialElements
