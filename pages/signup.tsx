@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { GoogleLoginButton } from 'ts-react-google-login-component';
 import GoogleLogin from 'react-google-login';
-import MicrosoftLoginButton from '../components/MicrosoftLoginButton';
-import SignupForm from '../components/SignupForm';
+import MicrosoftLoginButton from '../comp/MicrosoftLoginButton';
+import SignupForm from '../comp/SignupForm';
 
 
 const Register = () => {

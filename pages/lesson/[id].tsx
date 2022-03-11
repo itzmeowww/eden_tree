@@ -1,4 +1,4 @@
-import Nav from "../../components/Nav"
+import Nav from "../../comp/Nav"
 import ReactPlayer from 'react-player'
 
 import { useState } from "react"
