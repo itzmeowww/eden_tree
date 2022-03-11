@@ -1,9 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import { onAuthStateChanged } from 'firebase/auth'
+import { auth, db } from '../firebase/firebaseConfig'
+import { getDoc, doc, setDoc } from "firebase/firestore";
 
 import React, { useState, useEffect } from 'react';
-import { AiOutlineClose, AiFillRead, AiOutlineLink } from "react-icons/ai"
+import { AiOutlineClose, AiFillRead, AiOutlineLink, AiOutlineLoading3Quarters } from "react-icons/ai"
 import ReactFlow, {
 
   MiniMap,
@@ -22,13 +24,28 @@ type ConceptDetail = {
 }
 
 const Home: NextPage = () => {
-  const [elements, setElements] = useState(initialElements);
 
+  const [uid, setUid] = useState("")
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      if (uid != user.uid) setUid(user.uid)
+
+    } else {
+
+    }
+  });
+
+
+
+
+  const [elements, setElements] = useState(initialElements)
+  const [loadedData, setLoadedData] = useState(false)
   const [conceptDetail, setConceptDetail] = useState<ConceptDetail[]>([
     { id: "1", learned: false },
     { id: "2", learned: false },
     { id: "3", learned: false },
-    { id: "4", learned: true },
+    { id: "4", learned: false },
     { id: "5", learned: false },
     { id: "6", learned: false },
     { id: "7", learned: false },
@@ -36,6 +53,7 @@ const Home: NextPage = () => {
   const [currentConcept, setCurrentConcept] = useState(<></>)
   const [currentConceptId, setCurrentConceptId] = useState("")
   const [learned, setLearned] = useState(false)
+  const [savingData, setSavingData] = useState(false)
 
   const [showCard, setShowCard] = useState(false)
 
@@ -63,6 +81,7 @@ const Home: NextPage = () => {
       })
     );
 
+
   }
 
   const onCheckboxChange = (e, id: string) => {
@@ -71,7 +90,31 @@ const Home: NextPage = () => {
   const hideCard = () => {
     setShowCard(false)
   }
+  useEffect(() => {
+    if (uid != "" && loadedData) {
+      setSavingData(true)
+      setDoc(doc(db, "users", uid), {
+        concept: conceptDetail
+      }, { merge: true }).then(() => {
+        setSavingData(false)
+      })
+    }
+  }, [uid, conceptDetail])
 
+  useEffect(() => {
+    if (uid != "") {
+      getDoc(doc(db, 'users', uid)).then((snap) => {
+        if (snap.exists()) {
+          const data: ConceptDetail[] = snap.data().concept
+
+          if (data != undefined) {
+            setConceptDetail(data)
+            setLoadedData(true)
+          }
+        }
+      })
+    }
+  }, [uid])
   useEffect(() => {
     setElements((els) =>
       els.map((el) => {
@@ -113,9 +156,9 @@ const Home: NextPage = () => {
         <title>EdTree</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav isLoggedIn={true} />
+      <Nav />
 
-      <div className={`w-full h-full fixed z-10 flex-col justify-center items-center ${showCard ? 'flex' : 'hidden'}`} >
+      <div className={`pt-16 w-full h-full fixed z-10 flex-col justify-center items-center ${showCard ? 'flex' : 'hidden'}`} >
         <div className='absolute bg-black opacity-5 w-full h-full' onClick={hideCard}>
 
         </div>
@@ -143,7 +186,11 @@ const Home: NextPage = () => {
           </ul>
         </div>
       </div>
+
       <div className='w-full h-screen mt-0'>
+        <div className='mt-20 text-black fixed z-10'>
+          {savingData ? <h1 className='text-sm ml-2 flex items-center '> <AiOutlineLoading3Quarters className='animate-spin mr-2' />Saving Data</h1> : ""}
+        </div>
         <ReactFlow
           elements={elements}
           onLoad={onLoad}
