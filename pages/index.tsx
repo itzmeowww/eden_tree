@@ -16,7 +16,7 @@ import ReactFlow, {
 
 
 import initialElements from '../data/initial-elements';
-import Nav from '../comp/Nav';
+import Nav from '../components/Nav';
 
 type ConceptDetail = {
   id: string;
