@@ -41,7 +41,8 @@ const Nav = () => {
       <a href="/"><h1 className="text-lg font-bold">Eden-Tree</h1></a>
     </div>
     <div>
-      {loading ? <AiOutlineLoading3Quarters className='animate-spin' />
+      {loading ? <div className='flex items-center gap-2 justify-center'> <AiOutlineLoading3Quarters className='animate-spin' />
+        <button onClick={OnSignOut} className="text-sm border border-white px-4 py-1 rounded-md hover:bg-white hover:text-black transition-colors">Sign Out</button></div>
         : isLoggedIn ?
           <div className="flex items-center gap-4"> {`Hi, ${username}`}
             <button onClick={OnSignOut} className="text-sm border border-white px-4 py-1 rounded-md hover:bg-white hover:text-black transition-colors">Sign Out</button></div>
