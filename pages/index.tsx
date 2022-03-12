@@ -43,15 +43,11 @@ const Home: NextPage = () => {
 
   const [elements, setElements] = useState(initialElements)
   const [loadedData, setLoadedData] = useState(false)
-  const [conceptDetail, setConceptDetail] = useState<ConceptDetail[]>([
-    { id: "1", learned: false },
-    { id: "2", learned: false },
-    { id: "3", learned: false },
-    { id: "4", learned: false },
-    { id: "5", learned: false },
-    { id: "6", learned: false },
-    { id: "7", learned: false },
-  ])
+  let tmp = []
+  for (let i = 1; i <= 22; i++) {
+    tmp.push({ id: i.toString(), learned: false })
+  }
+  const [conceptDetail, setConceptDetail] = useState<ConceptDetail[]>(tmp)
   const [currentConcept, setCurrentConcept] = useState(<></>)
   const [currentConceptId, setCurrentConceptId] = useState("")
   const [learned, setLearned] = useState(false)

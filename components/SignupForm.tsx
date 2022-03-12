@@ -57,19 +57,16 @@ const SignupForm = () => {
     onSubmit: values => {
       setSigningUp(true)
       // alert(JSON.stringify(values, null, 2));
+      let concepts = []
+      for (let i = 1; i <= 22; i++) {
+        concepts.push({ id: i.toString(), learned: false })
+      }
       createUserWithEmailAndPassword(auth, values.email, values.password)
         .then((userCredential) => {
           const user = userCredential.user;
           setDoc(doc(db, 'users', user.uid), {
             username: values.username,
-            concept: [
-              { id: "1", learned: false },
-              { id: "2", learned: false },
-              { id: "3", learned: false },
-              { id: "4", learned: false },
-              { id: "5", learned: false },
-              { id: "6", learned: false },
-              { id: "7", learned: false },]
+            concept: concepts
           }).then(() => {
             router.replace('/')
           })

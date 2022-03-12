@@ -1,5 +1,4 @@
 import { AiOutlineClose, AiFillRead, AiOutlineLink } from "react-icons/ai"
-import StyledButton from "./StyledButton"
 import StyledFilledButton from "./StyledDarkButton"
 const Card = ({ learned, showCard, hideCard, currentConcept, onCheckboxChange, currentConceptId }) => {
     return <div className={`transition-all ease-in-out top-0 left-0 h-screen w-full fixed z-10 flex-col justify-center items-center ${showCard ? 'flex' : 'hidden'}`} >
@@ -12,13 +11,12 @@ const Card = ({ learned, showCard, hideCard, currentConcept, onCheckboxChange, c
 
             <div className="shadow-inner  rounded-sm overflow-x-scroll w-full flex flex-col items-center justify-center py-4">
                 <ul className="list-disc mt-2">
-                    <li>texttextetextextexexx</li>
-                    <li>sdnkanvkanvkansdvkn</li>
+
                 </ul>
                 <div className='text-lg mt-2'>
                     <input id='learned' type="checkbox" checked={learned} className='mr-2' onChange={(e) => onCheckboxChange(e, currentConceptId)}>
                     </input>
-                    <label htmlFor="learned"> Learned</label>
+                    <label htmlFor="learned">Learned</label>
                 </div>
                 <div className='my-4'>
                     <a href="lesson/demo"><StyledFilledButton label="Watch Lesson" /></a>
