@@ -1,0 +1,342 @@
+[
+  {
+    "id": "1",
+    "data": { "label": "Introduction to algebra" },
+    "position": { "x": 0, "y": 0 },
+    "type": "input"
+  },
+  {
+    "id": "2",
+    "data": {
+      "label": "Solving basic equations & inequalities (one variable, linear)"
+    },
+    "position": { "x": 0, "y": 150 }
+  },
+  {
+    "id": "3",
+    "data": { "label": "Linear equations, functions, & graphs" },
+    "position": { "x": 0, "y": 300 }
+  },
+  {
+    "id": "4",
+    "data": { "label": "Quadratic equations & functions" },
+    "position": { "x": 0, "y": 450 }
+  },
+  {
+    "id": "5",
+    "data": {
+      "label": "Difference of squares: Polynomial expressions, equations, & functions"
+    },
+    "position": { "x": 0, "y": 600 },
+    "type": "output"
+  },
+  {
+    "id": "6",
+    "data": { "label": "System of equations" },
+    "position": { "x": 200, "y": 450 }
+  },
+  {
+    "id": "7",
+    "data": { "label": "Two-variable inequalities" },
+    "position": { "x": 200, "y": 600 },
+    "type": "output"
+  },
+  {
+    "id": "8",
+    "data": { "label": "Algebraic modeling" },
+    "position": { "x": 1800, "y": 900 }
+  },
+  {
+    "id": "9",
+    "data": { "label": "Vectors" },
+    "position": { "x": 1000, "y": 600 }
+  },
+  {
+    "id": "10",
+    "data": { "label": "Matrices" },
+    "position": { "x": 800, "y": 750 },
+    "type": "output"
+  },
+  {
+    "id": "11",
+    "data": { "label": "Complex numbers" },
+    "position": { "x": 1200, "y": 600 }
+  },
+  {
+    "id": "12",
+    "data": { "label": "Conic sections" },
+    "position": { "x": 1400, "y": 750 },
+    "type": "output"
+  },
+  {
+    "id": "13",
+    "data": { "label": "Functions" },
+    "position": { "x": 600, "y": 150 }
+  },
+  {
+    "id": "14",
+    "data": { "label": "Absolute value equations, functions, & inequalities" },
+    "position": { "x": 200, "y": 300 },
+    "type": "output"
+  },
+  {
+    "id": "15",
+    "data": { "label": "Exponential & logarithmic functions" },
+    "position": { "x": 400, "y": 300 }
+  },
+  {
+    "id": "16",
+    "data": { "label": "Radical equations & functions" },
+    "position": { "x": 400, "y": 450 }
+  },
+  {
+    "id": "17",
+    "data": { "label": "Rational expressions, equations, & functions" },
+    "position": { "x": 400, "y": 600 },
+    "type": "output"
+  },
+  {
+    "id": "18",
+    "data": { "label": "Trigonometric functions" },
+    "position": { "x": 1000, "y": 300 }
+  },
+  {
+    "id": "19",
+    "data": {
+      "label": "Perfect squares: Polynomial expressions, equations, & functions"
+    },
+    "position": { "x": 800, "y": 300 }
+  },
+  {
+    "id": "20",
+    "data": { "label": "Polynomial expressions, equations, & functions" },
+    "position": { "x": 800, "y": 450 },
+    "type": "output"
+  },
+  {
+    "id": "21",
+    "data": { "label": "Sequences" },
+    "position": { "x": 1800, "y": 150 }
+  },
+  {
+    "id": "22",
+    "data": { "label": "Series & induction" },
+    "position": { "x": 1800, "y": 300 }
+  },
+  {
+    "id": "e1-2",
+    "source": "1",
+    "target": "2",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e2-3",
+    "source": "2",
+    "target": "3",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e3-4",
+    "source": "3",
+    "target": "4",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e4-5",
+    "source": "4",
+    "target": "5",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e3-6",
+    "source": "3",
+    "target": "6",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e6-7",
+    "source": "6",
+    "target": "7",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e6-8",
+    "source": "6",
+    "target": "8",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e8-9",
+    "source": "8",
+    "target": "9",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e9-10",
+    "source": "9",
+    "target": "10",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e8-11",
+    "source": "8",
+    "target": "11",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e11-12",
+    "source": "11",
+    "target": "12",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e1-13",
+    "source": "1",
+    "target": "13",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e13-14",
+    "source": "13",
+    "target": "14",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e13-15",
+    "source": "13",
+    "target": "15",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e15-16",
+    "source": "15",
+    "target": "16",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e16-17",
+    "source": "16",
+    "target": "17",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e13-18",
+    "source": "13",
+    "target": "18",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e18-9",
+    "source": "18",
+    "target": "9",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e18-11",
+    "source": "18",
+    "target": "11",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e13-19",
+    "source": "13",
+    "target": "19",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e19-20",
+    "source": "19",
+    "target": "20",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e1-21",
+    "source": "1",
+    "target": "21",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e21-22",
+    "source": "21",
+    "target": "22",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  },
+  {
+    "id": "e22-8",
+    "source": "22",
+    "target": "8",
+    "type": "smoothstep",
+    "animated": false,
+    "style": { "stroke": "#000000" },
+    "arrowHeadType": ArrowHeadType.ArrowClosed
+  }
+]

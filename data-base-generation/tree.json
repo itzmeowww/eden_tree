@@ -1,0 +1,96 @@
+{
+  "Introduction to algebra": [
+    "Overview and history of algebra, Introduction to variables, Substitution and evaluating expressions, Evaluating expressions word problems, Writing algebraic expressions introduction, Introduction to equivalent algebraic expressions, Dependent & independent variables, Combining like terms, Interpreting linear expressions, Irrational numbers, Sums and products of rational and irrational numbers, Proofs concerning irrational numbers, Division by zero, Binary and hexadecimal number systems",
+    [
+      "Solving basic equations & inequalities (one variable, linear)",
+      "Functions",
+      "Sequences"
+    ]
+  ],
+  "Solving basic equations & inequalities (one variable, linear)": [
+    "Algebraic equations basics, Why we do the same thing to both sides of an equation, One-step addition & subtraction equations, One-step multiplication & division equations, Two-steps equations intro, Two-step equation word problems, Linear equations with variables on both sides, Linear equations with parentheses, Analyzing the number of solutions to linear equations, Linear equations word problems, Linear equations with unknown coefficients, Old school equations with Sal, Introduction to inequalities with variables, One-step inequalities, Two-step inequalities, Multi-step inequalities, Compound inequalities",
+    ["Linear equations, functions, & graphs"]
+  ],
+  "Linear equations, functions, & graphs": [
+    "Two-variable linear equations intro, x-intercepts and y-intercepts, Slope, Horizontal & vertical lines, Intro to slope-intercept form, Graphing slope-intercept equations, Writing slope-intercept equations, Point-slope form, Standard form, Interpreting linear functions and equations, Comparing linear functions, Constructing linear models for real-world relationships, Linear models word problems",
+    [
+      "Quadratic equations & functions",
+      "System of equations",
+      "System of equations"
+    ]
+  ],
+  "Sequences": [
+    "Introduction to arithmetic sequences, Constructing arithmetic sequences, Introduction to geometric sequences, Constructing geometric sequences, Modeling with sequences, General sequences",
+    ["Series & induction"]
+  ],
+  "System of equations": [
+    "Systems of equations overview, Introduction to systems of equations, Equivalent systems of equations and the elimination method, Solving systems of equations with substitution, Manipulating expressions with unknown variables, Number of solutions to systems of equations, Systems of equations word problems, Solving equations by graphing (Algebra 2 level), Systems with three variables",
+    ["Two-variable inequalities", "Algebraic modeling"]
+  ],
+  "Two-variable inequalities": [
+    "Checking solutions of two-variable inequalities, Constraining solutions of two-variable inequalities, Graphing two-variable inequalities, Modeling with linear inequalities"
+  ],
+  "Functions": [
+    "Evaluating functions, Inputs and outputs of a function, Functions and equations, Interpreting function notation, Introduction to the domain and range of a function, Determining the domain of a function, Recognizing functions, Piecewise functions, Maximum and minimum points, Intervals where a function is positive, negative, increasing, or decreasing, Interpreting features of graphs, Average rate of change, Average rate of change word problems, Combining functions, Composing functions (Algebra 2 level), Shifting functions, Stretching functions, Modeling situations by combining and composing functions (Algebra 2 level), Introduction to inverses of functions (Algebra 2 level), Finding inverse functions (Algebra 2 level), Verifying that functions are inverses (Algebra 2 level), Determining whether a function is invertible (Algebra 2 level), Determining the domain of advanced functions (Algebra 2 level), Determining the range of a function (Algebra 2 level), Graphing nonlinear piecewise functions (Algebra 2 level), Interpreting the symmetry of algebraic models (Algebra 2 level), Interpreting the end behavior of algebraic models (Algebra 2 level), Interpreting the periodicity of algebraic models (Algebra 2 level), Comparing features of functions (Algebra 2 level), Two-variable functions",
+    [
+      "Absolute value equations, functions, & inequalities",
+      "Exponential & logarithmic functions",
+      "Trigonometric functions",
+      "Perfect squares: Polynomial expressions, equations, & functions"
+    ]
+  ],
+  "Absolute value equations, functions, & inequalities": [
+    "Graphs of absolute value functions, Solving absolute value equations, Solving absolute value inequalities"
+  ],
+  "Quadratic equations & functions": [
+    "Parabolas intro, Quadratic factored form, Solving quadratics by taking square roots, Quadratic vertex form, Solving quadratics by factoring, Completing the square, The quadratic formula, Quadratic standard form, Features & forms of quadratic functions, Transforming parabolas, Systems of quadratic equations, Quadratic inequalities",
+    ["Difference of squares: Polynomial expressions, equations, & functions"]
+  ],
+  "Polynomial expressions, equations, & functions": [
+    "Intro to polynomials, Adding & subtracting polynomials, Multiplying monomials, Multiplying monomials by polynomials, Multiplying binomials, Special products of binomials, Multiplying binomials by polynomials, Polynomials word problems, Introduction to factorization, Factoring monomials, Factoring polynomials by taking common factors, Evaluating expressions with unknown variables, Factoring quadratics intro, Factoring quadratics by grouping, Factoring polynomials with quadratic forms, Strategy in factoring quadratics, Factoring polynomials with special product forms, Long division of polynomials, Synthetic division of polynomials, Practice dividing polynomials with remainders, Polynomial Remainder Theorem, Binomial theorem, Understanding the binomial theorem, Advanced polynomial factorization methods, Proving polynomial identities, Polynomial identities with complex numbers, Quadratic equations with complex numbers, Fundamental Theorem of Algebra, Finding zeros of polynomials, Zeros of polynomials and their graphs, End behavior of polynomial functions, Graphs of polynomials, Introduction to symmetry of functions, Symmetry of polynomial functions"
+  ],
+  "Difference of squares: Polynomial expressions, equations, & functions": [
+    "Factoring quadratics"
+  ],
+  "Perfect squares: Polynomial expressions, equations, & functions": [
+    "Factoring quadratics",
+    ["Polynomial expressions, equations, & functions"]
+  ],
+  "Exponential & logarithmic functions": [
+    "Exponent properties review, Radicals, Rational exponents intro, Properties of exponents (rational exponents), Advanced exponent & radical evaluation, Simplifying square roots, Simplifying radicals (higher-index roots), Radicals (miscellaneous videos), Exponential vs. linear growth, Exponential expressions, Graphs of exponential growth, Exponential vs. linear growth over time, Exponential decay, Exponential functions from tables & graphs, Equivalent forms of exponential expressions, Solving exponential equations using properties of exponents, Introduction to rate of exponential growth and decay, Interpreting the rate of change of exponential models (Algebra 2 level), Constructing exponential models according to rate of change (Algebra 2 level), Advanced interpretation of exponential models (Algebra 2 level), Distinguishing between linear and exponential growth (Algebra 2 level), Introduction to logarithms (Algebra 2 level), The constant e and the natural logarithm (Algebra 2 level), Properties of logarithms (Algebra 2 level), The change of base formula for logarithms (Algebra 2 level), Logarithmic equations (Algebra 2 level), Solving exponential equations with logarithms (Algebra 2 level), Solving exponential models (Algebra 2 level), Graphs of exponential functions (Algebra 2 level), Graphs of logarithmic functions (Algebra 2 level), Logarithmic scale (Algebra 2 level)",
+    ["Radical equations & functions"]
+  ],
+  "Radical equations & functions": [
+    "Solving square-root equations, Extraneous solutions of radical equations, Solving cube-root equations, Domain of radical functions, Graphs of radical functions",
+    ["Rational expressions, equations, & functions"]
+  ],
+  "Rational expressions, equations, & functions": [
+    "Intro to rational expressions, Simplifying rational expressions, Multiplying & dividing rational expressions, Adding & subtracting rational expressions, Nested fractions, Solving rational equations, Direct and inverse variation, End behavior of rational functions, Discontinuities of rational functions, Graphs of rational functions, Modeling with rational functions, Rational inequalities, Partial fraction expansion"
+  ],
+  "Trigonometric functions": [
+    "Introduction to radians, The unit circle definition of sine, cosine, & tangent, The graphs of sine, cosine, & tangent, Basic trigonometric identities, Trigonometric values of special angles, Pythagorean identity, Introduction to amplitude, midline, & extrema of sinusoidal functions, Finding amplitude & midline of sinusoidal functions from their formulas, Period of sinusoidal functions, Graphing sinusoidal functions, Constructing sinusoidal functions, The inverse trigonometric functions, Solving basic sinusoidal equations, Solving advanced sinusoidal equations, Solving sinusoidal models, Introduction to the trigonometric angle addition identities, Using trigonometric identities to solve problems, Parametric equations",
+    ["Vectors", "Complex numbers"]
+  ],
+  "Algebraic modeling": [
+    "Rate conversion, Appropriate units, Word problems with multiple units, Modeling with one-variable equations & inequalities, Manipulating formulas",
+    ["Vectors", "Complex numbers"]
+  ],
+  "Complex numbers": [
+    "What are the imaginary numbers?, What are the complex numbers?, The complex plane, Adding & subtracting complex numbers, Multiplying complex numbers, Complex conjugates & dividing complex numbers, Absolute value & angle of complex numbers, Distance & midpoint of complex numbers, Polar form of complex numbers, Multiplying & dividing complex numbers in polar form, Challenging complex number problems",
+    ["Conic sections"]
+  ],
+  "Conic sections": [
+    "Introduction to conic sections, The features of a circle, Standard equation of a circle, Expanded equation of a circle, Center and radii of an ellipse, Foci of an ellipse, Focus and directrix of a parabola, Introduction to hyperbolas, Foci of a hyperbola, Hyperbolas not centered at the origin, Identifying conic sections from their expanded equations, Challenging conic section problems (IIT JEE)"
+  ],
+  "Series & induction": [
+    "Rational expressions, equations, & functions",
+    ["Algebraic modeling"]
+  ],
+  "Vectors": [
+    "Vector basics, Magnitude of vectors, Scalar multiplication, Vector addition & subtraction, Combined vector operations, Unit vectors, Magnitude & direction form of vectors, Component form of vectors, Adding vectors in magnitude & direction form, Applications of vectors",
+    ["Matrices"]
+  ],
+  "Matrices": [
+    "Introduction to matrices, Representing linear systems of equations with augmented matrices, Elementary matrix row operations, Row-echelon form & Gaussian elimination, Adding & subtracting matrices, Multiplying matrices by scalars, Properties of matrix addition & scalar multiplication, Multiplying matrices by matrices, Properties of matrix multiplication, Matrices as transformations, Determinant of a 2x2 matrix, Introduction to matrix inverses, Finding the inverse of a matrix using its determinant, Practice finding the inverses of 2x2 matrices, Determinants & inverses of large matrices, Solving equations with inverse matrices, Model real-world situations with matrices"
+  ]
+}

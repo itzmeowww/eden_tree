@@ -1,0 +1,395 @@
+Introduction to algebra^
+Difference of squares: Polynomial expressions, equations, & functions^Two-variable inequalities^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Two-variable inequalities^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Two-variable inequalities^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Two-variable inequalities^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Absolute value equations, functions, & inequalities^Rational expressions, equations, & functions^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Polynomial expressions, equations, & functions^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^Matrices^Matrices^Matrices^Matrices^Conic sections^Conic sections^Conic sections^Conic sections^
+Introduction to algebra=1
+Solving basic equations & inequalities (one variable, linear)=2
+Linear equations, functions, & graphs=3
+Quadratic equations & functions=4
+Difference of squares: Polynomial expressions, equations, & functions=5
+System of equations=6
+Two-variable inequalities=7
+Algebraic modeling=8
+Vectors=9
+Matrices=10
+Complex numbers=11
+Conic sections=12
+Functions=13
+Absolute value equations, functions, & inequalities=14
+Exponential & logarithmic functions=15
+Radical equations & functions=16
+Rational expressions, equations, & functions=17
+Trigonometric functions=18
+Perfect squares: Polynomial expressions, equations, & functions=19
+Polynomial expressions, equations, & functions=20
+Sequences=21
+Series & induction=22
+Introduction to algebra@ 0, 0
+Solving basic equations & inequalities (one variable, linear)@ 0, 150
+Linear equations, functions, & graphs@ 0, 300
+Quadratic equations & functions@ 0, 450
+Difference of squares: Polynomial expressions, equations, & functions@ 0, 600
+System of equations@ 200, 450
+Two-variable inequalities@ 200, 600
+Algebraic modeling@ 400, 600
+Vectors@ 400, 750
+Matrices@ 400, 900
+Matrices@ 600, 900
+Matrices@ 800, 900
+Matrices@ 1000, 900
+Complex numbers@ 600, 750
+Conic sections@ 600, 900
+Conic sections@ 800, 900
+Conic sections@ 1000, 900
+Conic sections@ 1200, 900
+Vectors@ 800, 750
+Matrices@ 800, 900
+Matrices@ 1000, 900
+Matrices@ 1200, 900
+Matrices@ 1400, 900
+Complex numbers@ 1000, 750
+Conic sections@ 1000, 900
+Conic sections@ 1200, 900
+Conic sections@ 1400, 900
+Conic sections@ 1600, 900
+Vectors@ 1200, 750
+Matrices@ 1200, 900
+Matrices@ 1400, 900
+Matrices@ 1600, 900
+Matrices@ 1800, 900
+Complex numbers@ 1400, 750
+Conic sections@ 1400, 900
+Conic sections@ 1600, 900
+Conic sections@ 1800, 900
+Conic sections@ 2000, 900
+Two-variable inequalities@ 600, 600
+Algebraic modeling@ 800, 600
+Vectors@ 800, 750
+Matrices@ 800, 900
+Matrices@ 1000, 900
+Matrices@ 1200, 900
+Matrices@ 1400, 900
+Complex numbers@ 1000, 750
+Conic sections@ 1000, 900
+Conic sections@ 1200, 900
+Conic sections@ 1400, 900
+Conic sections@ 1600, 900
+Vectors@ 1200, 750
+Matrices@ 1200, 900
+Matrices@ 1400, 900
+Matrices@ 1600, 900
+Matrices@ 1800, 900
+Complex numbers@ 1400, 750
+Conic sections@ 1400, 900
+Conic sections@ 1600, 900
+Conic sections@ 1800, 900
+Conic sections@ 2000, 900
+Vectors@ 1600, 750
+Matrices@ 1600, 900
+Matrices@ 1800, 900
+Matrices@ 2000, 900
+Matrices@ 2200, 900
+Complex numbers@ 1800, 750
+Conic sections@ 1800, 900
+Conic sections@ 2000, 900
+Conic sections@ 2200, 900
+Conic sections@ 2400, 900
+System of equations@ 400, 450
+Two-variable inequalities@ 400, 600
+Algebraic modeling@ 600, 600
+Vectors@ 600, 750
+Matrices@ 600, 900
+Matrices@ 800, 900
+Matrices@ 1000, 900
+Matrices@ 1200, 900
+Complex numbers@ 800, 750
+Conic sections@ 800, 900
+Conic sections@ 1000, 900
+Conic sections@ 1200, 900
+Conic sections@ 1400, 900
+Vectors@ 1000, 750
+Matrices@ 1000, 900
+Matrices@ 1200, 900
+Matrices@ 1400, 900
+Matrices@ 1600, 900
+Complex numbers@ 1200, 750
+Conic sections@ 1200, 900
+Conic sections@ 1400, 900
+Conic sections@ 1600, 900
+Conic sections@ 1800, 900
+Vectors@ 1400, 750
+Matrices@ 1400, 900
+Matrices@ 1600, 900
+Matrices@ 1800, 900
+Matrices@ 2000, 900
+Complex numbers@ 1600, 750
+Conic sections@ 1600, 900
+Conic sections@ 1800, 900
+Conic sections@ 2000, 900
+Conic sections@ 2200, 900
+Two-variable inequalities@ 800, 600
+Algebraic modeling@ 1000, 600
+Vectors@ 1000, 750
+Matrices@ 1000, 900
+Matrices@ 1200, 900
+Matrices@ 1400, 900
+Matrices@ 1600, 900
+Complex numbers@ 1200, 750
+Conic sections@ 1200, 900
+Conic sections@ 1400, 900
+Conic sections@ 1600, 900
+Conic sections@ 1800, 900
+Vectors@ 1400, 750
+Matrices@ 1400, 900
+Matrices@ 1600, 900
+Matrices@ 1800, 900
+Matrices@ 2000, 900
+Complex numbers@ 1600, 750
+Conic sections@ 1600, 900
+Conic sections@ 1800, 900
+Conic sections@ 2000, 900
+Conic sections@ 2200, 900
+Vectors@ 1800, 750
+Matrices@ 1800, 900
+Matrices@ 2000, 900
+Matrices@ 2200, 900
+Matrices@ 2400, 900
+Complex numbers@ 2000, 750
+Conic sections@ 2000, 900
+Conic sections@ 2200, 900
+Conic sections@ 2400, 900
+Conic sections@ 2600, 900
+Functions@ 200, 150
+Absolute value equations, functions, & inequalities@ 200, 300
+Exponential & logarithmic functions@ 400, 300
+Radical equations & functions@ 400, 450
+Rational expressions, equations, & functions@ 400, 600
+Trigonometric functions@ 600, 300
+Vectors@ 600, 450
+Matrices@ 600, 600
+Matrices@ 800, 600
+Matrices@ 1000, 600
+Matrices@ 1200, 600
+Complex numbers@ 800, 450
+Conic sections@ 800, 600
+Conic sections@ 1000, 600
+Conic sections@ 1200, 600
+Conic sections@ 1400, 600
+Perfect squares: Polynomial expressions, equations, & functions@ 800, 300
+Polynomial expressions, equations, & functions@ 800, 450
+Sequences@ 400, 150
+Series & induction@ 400, 300
+Algebraic modeling@ 400, 450
+Vectors@ 400, 600
+Matrices@ 400, 750
+Matrices@ 600, 750
+Matrices@ 800, 750
+Matrices@ 1000, 750
+Complex numbers@ 600, 600
+Conic sections@ 600, 750
+Conic sections@ 800, 750
+Conic sections@ 1000, 750
+Conic sections@ 1200, 750
+Vectors@ 800, 600
+Matrices@ 800, 750
+Matrices@ 1000, 750
+Matrices@ 1200, 750
+Matrices@ 1400, 750
+Complex numbers@ 1000, 600
+Conic sections@ 1000, 750
+Conic sections@ 1200, 750
+Conic sections@ 1400, 750
+Conic sections@ 1600, 750
+Vectors@ 1200, 600
+Matrices@ 1200, 750
+Matrices@ 1400, 750
+Matrices@ 1600, 750
+Matrices@ 1800, 750
+Complex numbers@ 1400, 600
+Conic sections@ 1400, 750
+Conic sections@ 1600, 750
+Conic sections@ 1800, 750
+Conic sections@ 2000, 750
+Introduction to algebra!Solving basic equations & inequalities (one variable, linear)
+Solving basic equations & inequalities (one variable, linear)!Linear equations, functions, & graphs
+Linear equations, functions, & graphs!Quadratic equations & functions
+Quadratic equations & functions!Difference of squares: Polynomial expressions, equations, & functions
+Linear equations, functions, & graphs!System of equations
+System of equations!Two-variable inequalities
+System of equations!Algebraic modeling
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+System of equations!Two-variable inequalities
+System of equations!Algebraic modeling
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Linear equations, functions, & graphs!System of equations
+System of equations!Two-variable inequalities
+System of equations!Algebraic modeling
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+System of equations!Two-variable inequalities
+System of equations!Algebraic modeling
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Introduction to algebra!Functions
+Functions!Absolute value equations, functions, & inequalities
+Functions!Exponential & logarithmic functions
+Exponential & logarithmic functions!Radical equations & functions
+Radical equations & functions!Rational expressions, equations, & functions
+Functions!Trigonometric functions
+Trigonometric functions!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Trigonometric functions!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Functions!Perfect squares: Polynomial expressions, equations, & functions
+Perfect squares: Polynomial expressions, equations, & functions!Polynomial expressions, equations, & functions
+Introduction to algebra!Sequences
+Sequences!Series & induction
+Series & induction!Algebraic modeling
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Algebraic modeling!Vectors
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Vectors!Matrices
+Algebraic modeling!Complex numbers
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
+Complex numbers!Conic sections
