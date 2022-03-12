@@ -23,7 +23,6 @@ const Lesson = () => {
         else {
             setIsCorrect(true)
             setShowQuiz(false)
-            setVideoLink(video['end'])
         }
     }
 
@@ -32,7 +31,6 @@ const Lesson = () => {
         'B': 'https://saratree.vercel.app/lesson/choice2.mp4',
         'C': 'https://saratree.vercel.app/lesson/choice3.mp4',
         'D': 'https://saratree.vercel.app/lesson/choice4.mp4',
-        'end': 'https://saratree.vercel.app/lesson/conclusion.mp4',
     }
 
 
