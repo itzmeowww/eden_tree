@@ -81,7 +81,7 @@ SaraTree is a platform for students to track the progress of their concepts with
                 <div className="flex justify-center items-center">
                     <div className="grid grid-cols-2 gap-4">
                         {
-                            [{ choice: "A", label: "Choice A" }, { choice: "B", label: "Choice B" }, { choice: "C", label: "Choice C" }, { choice: "D", label: "Choice D" }].map((choice) => {
+                            [{ choice: "A", label: "Choice 1" }, { choice: "B", label: "Choice 2" }, { choice: "C", label: "Choice 3" }, { choice: "D", label: "Choice 4" }].map((choice) => {
                                 return <StyledDarkButton onClick={() => {
                                     onAnswer(choice.choice)
                                 }} label={choice.label} />
