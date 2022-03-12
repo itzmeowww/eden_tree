@@ -15,7 +15,7 @@ const Lesson = () => {
     const [selectedChoice, setSelectedChoice] = useState("")
     const [isPlaying, setIsPlaying] = useState(false)
     const [isCorrect, setIsCorrect] = useState(false)
-    const [videoLink, setVideoLink] = useState("https://eden-tree.vercel.app/lesson/lesson.mp4")
+    const [videoLink, setVideoLink] = useState("https://saratree.vercel.app/lesson/lesson.mp4")
     const onEnded = () => {
 
         if (selectedChoice != correctChoice) setShowQuiz(true)
