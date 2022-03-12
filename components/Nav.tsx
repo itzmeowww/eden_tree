@@ -36,9 +36,11 @@ const Nav = () => {
   const OnSignOut = () => {
     signOut(auth)
   }
-  return <div className="text-white w-full h-14 fixed z-10 opacity-95 bg-black flex justify-between items-center px-6" >
+  return <div className="text-white w-full h-14 fixed z-10 opacity-95 bg-blue-800 flex justify-between items-center px-6" >
     <div className='flex items-center'>
-      <a href="/"><h1 className="text-lg font-bold tracking-widest">SaraTree</h1></a>
+      <a href="/" className='flex justify-center items-center'>
+        <img src="/icon.jpg" alt="" width={"30px"} height={"30px"} className="mr-2 rounded-sm" />
+        <h1 className="text-lg font-semibold tracking-widest">SaraTree</h1></a>
 
     </div>
     <div>

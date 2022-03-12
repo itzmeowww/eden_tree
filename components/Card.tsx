@@ -5,28 +5,36 @@ const Card = ({ learned, showCard, hideCard, currentConcept, onCheckboxChange, c
         <div className='absolute bg-black opacity-5 w-full h-full' onClick={hideCard}>
 
         </div>
-        <div className='relative bg-white border rounded-md border-black w-3/4 h-3/4 max-w-sm max-h-96 opacity-95 flex flex-col justify-start items-center gap-2 py-4 px-10'>
+        <div className='relative bg-white border rounded-md border-blue-900 w-3/4 h-3/4 max-w-sm max-h-96 opacity-95 flex flex-col justify-start items-center gap-2 py-4 px-10'>
             <button className='absolute -right-3 -top-3 bg-white border rounded-full p-1 border-black' onClick={hideCard}> <AiOutlineClose /></button>
-            <h1 className='text-2xl font-bold border-b border-black pb-1 px-4'>{currentConcept}</h1>
-            <div className='text-lg mt-2'>
-                <input id='learned' type="checkbox" checked={learned} className='mr-2' onChange={(e) => onCheckboxChange(e, currentConceptId)}>
-                </input>
-                <label htmlFor="learned"> Learned</label>
+            <h1 className='text-2xl font-bold border-b border-blue-900 pb-1 px-4 text-center'>{currentConcept}</h1>
+
+            <div className="overflow-x-scroll w-full flex flex-col items-center justify-center">
+                <ul className="list-disc mt-2">
+                    <li>texttextetextextexexx</li>
+                    <li>sdnkanvkanvkansdvkn</li>
+                </ul>
+                <div className='text-lg mt-2'>
+                    <input id='learned' type="checkbox" checked={learned} className='mr-2' onChange={(e) => onCheckboxChange(e, currentConceptId)}>
+                    </input>
+                    <label htmlFor="learned"> Learned</label>
+                </div>
+                <div className='my-4'>
+                    <a href="lesson/demo"><button className='border rounded-md border-black px-4 py-1 hover:bg-blue-800 hover:text-white transition-colors'>Watch Lesson</button></a>
+                </div>
+                <div className='w-full mt-2 flex items-center'>
+                    <AiFillRead className='mr-2' />
+                    <h2 className='text-lg font-semibold'>
+                        Material
+                    </h2>
+                </div>
+                <ul>
+                    <a href="" className='text-blue-600 underline' ><li className='flex items-center'><AiOutlineLink className='mr-2' /> What is {currentConcept}</li></a>
+                    <a href="" className='text-blue-600 underline' ><li className='flex items-center'><AiOutlineLink className='mr-2' /> Further reading about {currentConcept}</li></a>
+                    <a href="" className='text-blue-600 underline' ><li className='flex items-center'><AiOutlineLink className='mr-2' />Practice problems for {currentConcept}</li></a>
+                </ul>
             </div>
-            <div className='my-4'>
-                <a href="lesson/demo"><button className='border rounded-sm border-black px-4 py-1 hover:bg-black hover:text-white transition-colors'>Watch Lesson</button></a>
-            </div>
-            <div className='w-full mt-2 flex items-center'>
-                <AiFillRead className='mr-2' />
-                <h2 className='text-lg font-semibold'>
-                    Material
-                </h2>
-            </div>
-            <ul>
-                <a href="" className='text-blue-500 underline' ><li className='flex items-center'><AiOutlineLink className='mr-2' /> What is {currentConcept}</li></a>
-                <a href="" className='text-blue-500 underline' ><li className='flex items-center'><AiOutlineLink className='mr-2' /> Further reading about {currentConcept}</li></a>
-                <a href="" className='text-blue-500 underline' ><li className='flex items-center'><AiOutlineLink className='mr-2' />Practice problems for {currentConcept}</li></a>
-            </ul>
+
         </div>
     </div>
 }
