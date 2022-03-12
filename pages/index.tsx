@@ -181,7 +181,7 @@ SaraTree is a platform for students to track the progress of their concepts with
           snapToGrid={true}
           nodesDraggable={false}
           nodesConnectable={false}
-
+          minZoom={0.1}
           snapGrid={[15, 15]}
         >
           <MiniMap
