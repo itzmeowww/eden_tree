@@ -104,7 +104,7 @@ const SigninForm = () => {
 
       <div className="mb-2 flex items-center justify-end">
 
-        <StyledDarkButton label='Sign In' disabled={SigningIn} />
+        <StyledDarkButton label='Sign In' disabled={SigningIn} loading={SigningIn} />
       </div>
 
     </form>

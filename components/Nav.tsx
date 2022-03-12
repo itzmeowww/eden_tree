@@ -36,10 +36,12 @@ const Nav = () => {
   const OnSignOut = () => {
     signOut(auth)
   }
-  return <div className="text-white w-full h-14 fixed z-10 opacity-95 bg-blue-800 flex justify-between items-center px-6" >
+  return <div className="text-white w-full h-14 fixed z-10 opacity-95 bg-blue-800 flex justify-between items-center px-2 md:px-6" >
     <div className='flex items-center'>
       <a href="/" className='flex justify-center items-center'>
-        <img src="/icon.jpg" alt="" width={"30px"} height={"30px"} className="mr-2 rounded-sm" />
+        <div className='p-1 bg-white flex justify-center items-center rounded-sm h-10 w-10 mr-2'>
+          <img src="/tree_logo.png" alt="" className="h-8 rounded-sm" />
+        </div>
         <h1 className="text-lg font-semibold tracking-widest">SaraTree</h1></a>
 
     </div>
@@ -47,8 +49,12 @@ const Nav = () => {
       {loading ? <div className='flex items-center gap-2 justify-center'> <AiOutlineLoading3Quarters className='animate-spin' />
         <StyledButton onClick={OnSignOut} label="Sign Out" /> </div>
         : isLoggedIn ?
-          <div className="flex items-center gap-4"> {`Hi, ${username}`}
-            <StyledButton onClick={OnSignOut} label="Sign Out" /></div>
+          <div className="flex items-center gap-4 text-ellipsis">
+            <h1 className='truncate w-28 md:w-32'> {`Hi, ${username}`}</h1>
+
+            <StyledButton onClick={OnSignOut} label="Sign Out" />
+
+          </div>
           :
           <a href="/signin"> <StyledButton onClick={OnSignOut} label="Sign In" /></a>
       }

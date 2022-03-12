@@ -14,8 +14,8 @@ const Register = () => {
                 <title>Sign In, SaraTree</title>
                 <meta name="description" content="SaraTree is a visualization and interactive learning platform.
 SaraTree is a platform for students to track the progress of their concepts with the core of game-based learning through achievement-like progress and interactive courses." />
-                <link rel="icon" href="/icon.jpg" />
-                <link rel="apple-touch-icon" href="/icon.jpg"></link>
+                <link rel="icon" href="/tree_logo.png" />
+                <link rel="apple-touch-icon" href="/tree_logo.jpg"></link>
             </Head>
             <Nav />
             <DottedBackground />

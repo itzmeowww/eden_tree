@@ -163,15 +163,15 @@ const Home: NextPage = () => {
         <title>SaraTree</title>
         <meta name="description" content="SaraTree is a visualization and interactive learning platform.
 SaraTree is a platform for students to track the progress of their concepts with the core of game-based learning through achievement-like progress and interactive courses." />
-        <link rel="icon" href="/icon.jpg" />
-        <link rel="apple-touch-icon" href="/icon.jpg"></link>
+        <link rel="icon" href="/tree_logo.png" />
+        <link rel="apple-touch-icon" href="/tree_logo.jpg"></link>
       </Head>
       <Nav />
       <LoadingScreen loading={showLoadingScreen} />
       <Card currentConcept={currentConcept} currentConceptId={currentConceptId} hideCard={hideCard} learned={learned} onCheckboxChange={onCheckboxChange} showCard={showCard} />
 
       <div className='w-full h-screen mt-0'>
-        <div className='mt-20 text-black fixed z-10'>
+        <div className='mt-16 text-black fixed z-10'>
           {savingData ? <h1 className='text-sm ml-2 flex items-center '> <AiOutlineLoading3Quarters className='animate-spin mr-2' />Saving Data</h1> : ""}
         </div>
         <ReactFlow

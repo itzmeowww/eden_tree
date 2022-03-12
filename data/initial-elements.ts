@@ -37,12 +37,12 @@ const initialElements: Elements = [
   {
     id: '6',
     data: { label: 'System of equations' },
-    position: { x: 200, y: 1050 },
+    position: { x: 0, y: 1050 },
   },
   {
     id: '7',
     data: { label: 'Two-variable inequalities' },
-    position: { x: 200, y: 1200 },
+    position: { x: 0, y: 1200 },
     type: 'output',
   },
   {
