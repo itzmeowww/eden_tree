@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 .react-flow__node:hover {
-    background-color: darkolivegreen;
-    color: aliceblue;
+  background-color: #e4e4e7;
+  color: black;
 }
