@@ -7,6 +7,7 @@ import { AiOutlineLoading3Quarters } from 'react-icons/ai'
 
 import { useRouter } from "next/router"
 import AlertCard from './AlertCard';
+import StyledDarkButton from './StyledDarkButton';
 
 
 
@@ -103,7 +104,7 @@ const SigninForm = () => {
 
       <div className="mb-2 flex items-center justify-end">
 
-        <button disabled={SigningIn} className=" border border-black rounded text-black bg-white hover:bg-black py-1 px-4 hover:text-white"> {SigningIn ? <AiOutlineLoading3Quarters className='animate-spin' /> : "Sign In"}</button>
+        <StyledDarkButton label='Sign In' disabled={SigningIn} />
       </div>
 
     </form>

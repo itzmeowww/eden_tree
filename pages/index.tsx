@@ -18,6 +18,7 @@ import ReactFlow, {
 import initialElements from '../data/initial-elements';
 import Nav from '../components/Nav';
 import Card from '../components/Card';
+import LoadingScreen from '../components/LoadingScreen';
 
 type ConceptDetail = {
   id: string;
@@ -151,6 +152,15 @@ const Home: NextPage = () => {
     return '#fff';
   };
 
+  const [showLoadingScreen, setShowLoadingScreen] = useState(true)
+
+  useEffect((
+  ) => {
+    setTimeout(() => {
+      setShowLoadingScreen(false)
+    }, 2000)
+  }, [])
+
   return (
     <div className="w-full flex h-screen flex-col items-start justify-start">
       <Head>
@@ -161,7 +171,7 @@ SaraTree is a platform for students to track the progress of their concepts with
         <link rel="apple-touch-icon" href="/icon.jpg"></link>
       </Head>
       <Nav />
-
+      <LoadingScreen loading={showLoadingScreen} />
       <Card currentConcept={currentConcept} currentConceptId={currentConceptId} hideCard={hideCard} learned={learned} onCheckboxChange={onCheckboxChange} showCard={showCard} />
 
       <div className='w-full h-screen mt-0'>

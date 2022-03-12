@@ -6,6 +6,7 @@ import SignupForm from '../components/SignupForm';
 import DottedBackground from '../components/DottedBackground';
 import Nav from '../components/Nav';
 import Head from "next/head"
+import StyledDarkButton from '../components/StyledDarkButton';
 const Register = () => {
 
     return (
@@ -29,7 +30,9 @@ SaraTree is a platform for students to track the progress of their concepts with
                         <div>
                             <SignupForm />
                             <div className='flex items-center justify-end mb-4'>
-                                <a href="/signin"><button className=" border border-black rounded text-black bg-white hover:bg-black py-1 px-4 hover:text-white"> Sign In</button></a>
+                                <a href="/signin">
+                                    <StyledDarkButton label='Sign In' />
+                                </a>
                             </div>
                         </div>
                         <div>

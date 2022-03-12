@@ -1,11 +1,12 @@
 import Nav from "../../components/Nav"
 import ReactPlayer from 'react-player'
 import Head from 'next/head'
-
+import { motion } from "framer-motion"
 import { useState } from "react"
 // Render a YouTube video player
 import DottedBackground from "../../components/DottedBackground"
 import { useRouter } from "next/router"
+import StyledDarkButton from "../../components/StyledDarkButton"
 const Lesson = () => {
     const router = useRouter()
     const { id } = router.query
@@ -59,7 +60,7 @@ SaraTree is a platform for students to track the progress of their concepts with
         <DottedBackground />
 
 
-        <div className=" w-3/4 max-w-lg min-h-min mt-32">
+        <div className=" w-3/4 max-w-lg min-h-min mt-20">
             <div className="text-black mt-16 text-2xl my-2 border-b pr-16 border-black">
                 {id}
             </div>
@@ -73,25 +74,30 @@ SaraTree is a platform for students to track the progress of their concepts with
             <div className={`w-full mb-12 mt-6 justify-center items-center  ${isCorrect ? 'flex' : 'hidden'}`}>
                 <h1 className="text-lg font-bold mx-auto text-green-600">Correct!</h1>
             </div>
-            <div className={`w-full mb-12 mt-6  ${showQuiz ? 'block' : 'hidden'}`}>
-                <h1 className="text-lg font-bold my-4">Quiz</h1>
+            <motion.div variants={{
+                open: { opacity: 1, x: 0 },
+                closed: { opacity: 0, y: "10%" }
+            }} animate={showQuiz ? "open" : "closed"}
+
+                className={`transition-all duration-100 ease-in w-full mb-12 mt-6  ${showQuiz ? 'block' : 'hidden'}`}>
+                <h1 className="text-lg font-bold my-4">Quiz : This is question</h1>
                 <div className="flex justify-center items-center">
                     <div className="grid grid-cols-2 gap-4">
                         {
-                            ["A", "B", "C", "D"].map((choice) => {
-                                return <button onClick={() => {
-                                    onAnswer(choice)
-                                }} className="rounded border border-black px-2 py-1 transition-colors hover:bg-black hover:text-white">Choice {choice}</button>
+                            [{ choice: "A", label: "Choice A" }, { choice: "B", label: "Choice B" }, { choice: "C", label: "Choice C" }, { choice: "D", label: "Choice D" }].map((choice) => {
+                                return <StyledDarkButton onClick={() => {
+                                    onAnswer(choice.choice)
+                                }} label={choice.label} />
 
                             })
                         }
 
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
 
 
-    </div>
+    </div >
 }
 export default Lesson

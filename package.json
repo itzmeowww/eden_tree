@@ -12,6 +12,7 @@
     "@types/gapi.auth2": "^0.0.56",
     "firebase": "^9.6.8",
     "formik": "^2.2.9",
+    "framer-motion": "^6.2.8",
     "gapi-script": "^1.2.0",
     "next": "latest",
     "react": "^17.0.2",

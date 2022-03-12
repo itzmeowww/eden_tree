@@ -7,6 +7,7 @@ import { AiOutlineLoading3Quarters } from 'react-icons/ai'
 
 import { useRouter } from "next/router"
 import AlertCard from './AlertCard';
+import StyledDarkButton from './StyledDarkButton';
 
 
 type SignUpData = {
@@ -84,17 +85,7 @@ const SignupForm = () => {
         setErrorSignUp(false)
         setSigningUp(false)
       }} label={"Cannot Sign Up"} />
-      <div className="mb-4">
-        <label htmlFor="username" className="block mb-1">Username</label>
-        <input id="username"
-          disabled={signingUp}
-          name="username"
-          type="text"
-          onChange={formik.handleChange}
-          value={formik.values.username}
-          className={`py-2 px-3 border ${formik.errors.username ? 'border-red-500' : 'border-gray-300'} focus:border-black focus:outline-none  rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full`} />
-        <h4 className='text-sm text-red-500 mt-1 ml-1'> {formik.errors.username}</h4>
-      </div>
+
       <div className="mb-4">
         <label htmlFor="email" className="block mb-1">Email Address</label>
         <input id="email"
@@ -117,10 +108,21 @@ const SignupForm = () => {
           className={`py-2 px-3 border ${formik.errors.password ? 'border-red-500' : 'border-gray-300'} focus:border-black focus:outline-none rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full`} />
         <h4 className='text-sm text-red-500 mt-1 ml-1'> {formik.errors.password}</h4>
       </div>
-
+      <div className="mb-4">
+        <label htmlFor="username" className="block mb-1">Username</label>
+        <input id="username"
+          disabled={signingUp}
+          name="username"
+          type="text"
+          onChange={formik.handleChange}
+          value={formik.values.username}
+          className={`py-2 px-3 border ${formik.errors.username ? 'border-red-500' : 'border-gray-300'} focus:border-black focus:outline-none  rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full`} />
+        <h4 className='text-sm text-red-500 mt-1 ml-1'> {formik.errors.username}</h4>
+      </div>
 
       <div className="mb-2 flex items-center justify-end">
-        <button disabled={signingUp} className=" border border-black rounded text-black bg-white hover:bg-black py-1 px-4 hover:text-white"> {signingUp ? <AiOutlineLoading3Quarters className='animate-spin' /> : "Sign up"}</button>
+        <StyledDarkButton disabled={signingUp} loading={signingUp} label={"Sign Up"} />
+
       </div>
 
     </form>
