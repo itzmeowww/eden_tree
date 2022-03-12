@@ -52,7 +52,7 @@ const MicrosoftLoginButton: React.FunctionComponent<MicrosoftLoginButtonProps> =
     );
   } else {
     return (
-      <button onClick={onClick} className='bg-white shadow-md'>
+      <button onClick={onClick} disabled={true} className='bg-white shadow-md'>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="215"

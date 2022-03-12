@@ -5,7 +5,7 @@ import { auth, db } from '../firebase/firebaseConfig'
 import { getDoc, doc, setDoc } from "firebase/firestore";
 
 import React, { useState, useEffect } from 'react';
-import { AiOutlineClose, AiFillRead, AiOutlineLink, AiOutlineLoading3Quarters } from "react-icons/ai"
+import { AiOutlineLoading3Quarters } from "react-icons/ai"
 import ReactFlow, {
 
   MiniMap,
@@ -17,6 +17,7 @@ import ReactFlow, {
 
 import initialElements from '../data/initial-elements';
 import Nav from '../components/Nav';
+import Card from '../components/Card';
 
 type ConceptDetail = {
   id: string;
@@ -153,39 +154,15 @@ const Home: NextPage = () => {
   return (
     <div className="w-full flex h-screen flex-col items-start justify-start">
       <Head>
-        <title>EdTree</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>SaraTree</title>
+        <meta name="description" content="SaraTree is a visualization and interactive learning platform.
+SaraTree is a platform for students to track the progress of their concepts with the core of game-based learning through achievement-like progress and interactive courses." />
+        <link rel="icon" href="/icon.jpg" />
+        <link rel="apple-touch-icon" href="/icon.jpg"></link>
       </Head>
       <Nav />
 
-      <div className={`pt-16 w-full h-full fixed z-10 flex-col justify-center items-center ${showCard ? 'flex' : 'hidden'}`} >
-        <div className='absolute bg-black opacity-5 w-full h-full' onClick={hideCard}>
-
-        </div>
-        <div className='relative bg-white border rounded-md border-black w-3/4 h-3/4 max-w-sm max-h-96 opacity-95 flex flex-col justify-start items-center gap-2 py-4 px-10'>
-          <button className='absolute -right-3 -top-3 bg-white border rounded-full p-1 border-black' onClick={hideCard}> <AiOutlineClose /></button>
-          <h1 className='text-2xl font-bold border-b border-black pb-1 px-8'>{currentConcept}</h1>
-          <div className='text-lg'>
-            <input id='learned' type="checkbox" checked={learned} className='mr-2' onChange={(e) => onCheckboxChange(e, currentConceptId)}>
-            </input>
-            <label htmlFor="learned"> Learned</label>
-          </div>
-          <div className='my-4'>
-            <a href="lesson/demo"><button className='border rounded-sm border-black px-4 py-1'>Watch Lesson</button></a>
-          </div>
-          <div className='w-full mt-6 flex items-center'>
-            <AiFillRead className='mr-2' />
-            <h2 className='text-lg font-semibold'>
-              Material
-            </h2>
-          </div>
-          <ul>
-            <a href="" className='text-blue-500 underline' ><li className='flex items-center'><AiOutlineLink className='mr-2' /> What is {currentConcept}</li></a>
-            <a href="" className='text-blue-500 underline' ><li className='flex items-center'><AiOutlineLink className='mr-2' /> Further reading about {currentConcept}</li></a>
-            <a href="" className='text-blue-500 underline' ><li className='flex items-center'><AiOutlineLink className='mr-2' />Practice problems for {currentConcept}</li></a>
-          </ul>
-        </div>
-      </div>
+      <Card currentConcept={currentConcept} currentConceptId={currentConceptId} hideCard={hideCard} learned={learned} onCheckboxChange={onCheckboxChange} showCard={showCard} />
 
       <div className='w-full h-screen mt-0'>
         <div className='mt-20 text-black fixed z-10'>

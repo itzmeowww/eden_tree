@@ -6,6 +6,8 @@ import { setDoc, doc } from "firebase/firestore";
 import { AiOutlineLoading3Quarters } from 'react-icons/ai'
 
 import { useRouter } from "next/router"
+import AlertCard from './AlertCard';
+
 
 
 type SignUpData = {
@@ -32,10 +34,11 @@ const validate = values => {
 };
 
 
-const SignupForm = () => {
+const SigninForm = () => {
   const router = useRouter()
 
-  const [signingUp, setSigningUp] = useState(false)
+  const [errorSignIn, setErrorSignIn] = useState(false)
+  const [SigningIn, setSigningIn] = useState(false)
 
 
 
@@ -47,22 +50,37 @@ const SignupForm = () => {
       password: ''
     }, validate,
     onSubmit: values => {
-      setSigningUp(true)
-      // alert(JSON.stringify(values, null, 2));
-      signInWithEmailAndPassword(auth, values.email, values.password)
-        .then((userCredential) => {
-          const user = userCredential.user;
-          router.replace('/')
-        })
+      if (errorSignIn) {
+        formik.setSubmitting(false)
+
+      }
+      else {
+        setSigningIn(true)
+        // alert(JSON.stringify(values, null, 2));
+        signInWithEmailAndPassword(auth, values.email, values.password)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            router.replace('/')
+          }).catch((err) => {
+
+            setErrorSignIn(true)
+            setSigningIn(false)
+
+          })
+        formik.setSubmitting(false)
+      }
     }
+
   });
   return (
     <form onSubmit={formik.handleSubmit}>
-
+      <AlertCard showCard={errorSignIn} hideCard={() => {
+        setErrorSignIn(false)
+      }} label={"Email or Password is incorrect"} />
       <div className="mb-4">
         <label htmlFor="email" className="block mb-1">Email Address</label>
         <input id="email"
-          disabled={signingUp}
+          disabled={SigningIn}
           name="email"
           type="email"
           onChange={formik.handleChange}
@@ -73,7 +91,7 @@ const SignupForm = () => {
       <div className="mb-4">
         <label htmlFor="password" className="block mb-1">Password</label>
         <input id="password"
-          disabled={signingUp}
+          disabled={SigningIn}
           name="password"
           type="password"
           onChange={formik.handleChange}
@@ -84,11 +102,12 @@ const SignupForm = () => {
 
 
       <div className="mb-2 flex items-center justify-end">
-        <button disabled={signingUp} className=" border border-black rounded text-black bg-white hover:bg-black py-2 px-4 hover:text-white"> {signingUp ? <AiOutlineLoading3Quarters className='animate-spin' /> : "Sign In"}</button>
+
+        <button disabled={SigningIn} className=" border border-black rounded text-black bg-white hover:bg-black py-1 px-4 hover:text-white"> {SigningIn ? <AiOutlineLoading3Quarters className='animate-spin' /> : "Sign In"}</button>
       </div>
 
     </form>
   );
 };
 
-export default SignupForm
+export default SigninForm

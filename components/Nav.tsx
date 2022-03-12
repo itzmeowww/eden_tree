@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { auth, db } from '../firebase/firebaseConfig'
 import { getDoc, doc } from "firebase/firestore";
 import { AiOutlineLoading3Quarters } from 'react-icons/ai'
+import StyledButton from './StyledButton';
 
 const Nav = () => {
   const [username, setUsername] = useState("")
@@ -36,22 +37,22 @@ const Nav = () => {
     signOut(auth)
   }
   return <div className="text-white w-full h-14 fixed z-10 opacity-95 bg-black flex justify-between items-center px-6" >
+    <div className='flex items-center'>
+      <a href="/"><h1 className="text-lg font-bold tracking-widest">SaraTree</h1></a>
 
-    <div>
-      <a href="/"><h1 className="text-lg font-bold">Eden-Tree</h1></a>
     </div>
     <div>
       {loading ? <div className='flex items-center gap-2 justify-center'> <AiOutlineLoading3Quarters className='animate-spin' />
-        <button onClick={OnSignOut} className="text-sm border border-white px-4 py-1 rounded-md hover:bg-white hover:text-black transition-colors">Sign Out</button></div>
+        <StyledButton onClick={OnSignOut} label="Sign Out" /> </div>
         : isLoggedIn ?
           <div className="flex items-center gap-4"> {`Hi, ${username}`}
-            <button onClick={OnSignOut} className="text-sm border border-white px-4 py-1 rounded-md hover:bg-white hover:text-black transition-colors">Sign Out</button></div>
+            <StyledButton onClick={OnSignOut} label="Sign Out" /></div>
           :
-          <a href="/signin"> <button className="text-sm border border-white px-4 py-1 rounded-md hover:bg-white hover:text-black transition-colors">Sign In</button></a>
+          <a href="/signin"> <StyledButton onClick={OnSignOut} label="Sign In" /></a>
       }
-
     </div>
-
   </div>
+
 }
+
 export default Nav

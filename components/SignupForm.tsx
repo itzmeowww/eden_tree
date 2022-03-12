@@ -6,6 +6,7 @@ import { setDoc, doc } from "firebase/firestore";
 import { AiOutlineLoading3Quarters } from 'react-icons/ai'
 
 import { useRouter } from "next/router"
+import AlertCard from './AlertCard';
 
 
 type SignUpData = {
@@ -41,7 +42,7 @@ const SignupForm = () => {
   const router = useRouter()
 
   const [signingUp, setSigningUp] = useState(false)
-
+  const [errorSignUp, setErrorSignUp] = useState(false)
 
 
   // Pass the useFormik() hook initial form values and a submit function that will
@@ -72,11 +73,17 @@ const SignupForm = () => {
             router.replace('/')
           })
 
+        }).catch(() => {
+          setErrorSignUp(true)
         })
     }
   });
   return (
     <form onSubmit={formik.handleSubmit}>
+      <AlertCard showCard={errorSignUp} hideCard={() => {
+        setErrorSignUp(false)
+        setSigningUp(false)
+      }} label={"Cannot Sign Up"} />
       <div className="mb-4">
         <label htmlFor="username" className="block mb-1">Username</label>
         <input id="username"
@@ -113,7 +120,7 @@ const SignupForm = () => {
 
 
       <div className="mb-2 flex items-center justify-end">
-        <button disabled={signingUp} className=" border border-black rounded text-black bg-white hover:bg-black py-2 px-4 hover:text-white"> {signingUp ? <AiOutlineLoading3Quarters className='animate-spin' /> : "Sign up"}</button>
+        <button disabled={signingUp} className=" border border-black rounded text-black bg-white hover:bg-black py-1 px-4 hover:text-white"> {signingUp ? <AiOutlineLoading3Quarters className='animate-spin' /> : "Sign up"}</button>
       </div>
 
     </form>
