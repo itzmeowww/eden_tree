@@ -1,0 +1,38 @@
+[
+  { "id": "0", "data": { "label": "A" }, "position": { "x": 0, "y": 0 } },
+  { "id": "1", "data": { "label": "B" }, "position": { "x": 0, "y": 150 } },
+  { "id": "2", "data": { "label": "E" }, "position": { "x": 0, "y": 300 } },
+  { "id": "3", "data": { "label": "F" }, "position": { "x": 200, "y": 300 } },
+  { "id": "4", "data": { "label": "C" }, "position": { "x": 200, "y": 150 } },
+  { "id": "5", "data": { "label": "D" }, "position": { "x": 400, "y": 150 } },
+  {
+    "id": "e0-1",
+    "source": "0",
+    "target": "1",
+    "arrowHeadType": "ArrowHeadType.ArrowClosed"
+  },
+  {
+    "id": "e1-2",
+    "source": "1",
+    "target": "2",
+    "arrowHeadType": "ArrowHeadType.ArrowClosed"
+  },
+  {
+    "id": "e1-3",
+    "source": "1",
+    "target": "3",
+    "arrowHeadType": "ArrowHeadType.ArrowClosed"
+  },
+  {
+    "id": "e0-4",
+    "source": "0",
+    "target": "4",
+    "arrowHeadType": "ArrowHeadType.ArrowClosed"
+  },
+  {
+    "id": "e0-5",
+    "source": "0",
+    "target": "5",
+    "arrowHeadType": "ArrowHeadType.ArrowClosed"
+  }
+]

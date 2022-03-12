@@ -27,11 +27,11 @@ const Lesson = () => {
     }
 
     const video = {
-        'A': 'https://eden-tree.vercel.app/lesson/choice1.mp4',
-        'B': 'https://eden-tree.vercel.app/lesson/choice2.mp4',
-        'C': 'https://eden-tree.vercel.app/lesson/choice3.mp4',
-        'D': 'https://eden-tree.vercel.app/lesson/choice4.mp4',
-        'end': 'https://eden-tree.vercel.app/lesson/conclusion.mp4',
+        'A': 'https://saratree.vercel.app/lesson/choice1.mp4',
+        'B': 'https://saratree.vercel.app/lesson/choice2.mp4',
+        'C': 'https://saratree.vercel.app/lesson/choice3.mp4',
+        'D': 'https://saratree.vercel.app/lesson/choice4.mp4',
+        'end': 'https://saratree.vercel.app/lesson/conclusion.mp4',
     }
 
 
