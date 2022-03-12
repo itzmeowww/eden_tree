@@ -77,7 +77,7 @@ SaraTree is a platform for students to track the progress of their concepts with
             }} animate={showQuiz ? "open" : "closed"}
 
                 className={`transition-all duration-100 ease-in w-full mb-12 mt-6  ${showQuiz ? 'block' : 'hidden'}`}>
-                <h1 className="text-lg font-bold my-4">Quiz : This is question</h1>
+                <h1 className="text-lg font-bold my-4">Quiz : Which one is a function?</h1>
                 <div className="flex justify-center items-center">
                     <div className="grid grid-cols-2 gap-4">
                         {
